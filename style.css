@@ -1,0 +1,201 @@
+/* Import de la police 'Press Start 2P' */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #02040f; /* Couleur de fond sombre */
+    scroll-behavior: smooth;
+    color: #e0e0e0; /* Couleur neutre et élégante pour le texte */
+}
+
+#a-solganeo-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#solganeo-logo{
+    width: 300px;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('./assets/super-mario.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Superposition sombre pour améliorer la lisibilité */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #f0f0f0; /* Couleur douce pour le texte */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Ombre légère pour rendre le texte lisible */
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d4d4d4; /* Couleur de titre plus neutre et pro */
+}
+
+h2, h3 {
+    margin: 1rem 0;
+    font-family: 'Press Start 2P', cursive; /* Toujours avec un léger style arcade, mais subtil */
+    color: #b3b3b3; /* Couleur gris doux */
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: #d1d1d1; /* Couleur subtile pour les paragraphes */
+}
+
+/* Style arcade pro pour le bouton 'Découvrir le tuto' */
+.scroll-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 24px;
+    background-color: #1a1a1a; /* Noir foncé */
+    color: #cccccc; /* Gris clair, sobre */
+    text-decoration: none;
+    border: 2px solid #666666; /* Bordure gris foncé */
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.scroll-button:hover {
+    background-color: #333333; /* Gris foncé au survol */
+    color: #ffffff;
+    border-color: #888888;
+    transform: scale(1.05); /* Légère animation pour un effet pro */
+}
+
+/* Section Basse */
+.platforms-section {
+    padding: 50px;
+    background: #0e0e10; /* Fond sombre mais élégant */
+    text-align: center;
+    color: white;
+}
+
+.platforms-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #b3b3b3; /* Gris clair pour une lisibilité professionnelle */
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.platform-block {
+    background-color: #05060f;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Effet d'ombre subtil et pro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #333333; /* Bordure sombre et discrète */
+}
+
+.platform-block:hover {
+    box-shadow: 0 12px 30px rgba(51, 51, 51, 0.8); /* Ombre légère et cohérente */
+}
+
+.platform-block i {
+    font-size: 4rem;
+    color: #cccccc; /* Gris élégant pour les icônes */
+    margin-bottom: 1rem;
+}
+
+.platform-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Couleur subtile pour les titres */
+}
+
+.platform-block p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+}
+
+/* Boutons avec style plus sobre */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1a1a1a; /* Fond noir sobre */
+    color: #cccccc; /* Couleur de texte élégante */
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    border: 2px solid #666666; /* Bordure gris foncé */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #333333; /* Survol subtil en gris foncé */
+    color: #ffffff;
+    transform: scale(1.05); /* Légère animation de survol */
+}
+
+/* Styles Responsives */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .scroll-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .platform-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
